@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Формирование заказа" Height="350" Width="525">
+    <Grid>
+        <Label Content="Код лабораторной посуды:"/>
+        <TextBox x:Name="VesselCodeTextBox" Margin="5" />
+
+        <Label Content="Выберите заказчика:"/>
+        <ComboBox x:Name="CustomerTypeComboBox" Margin="5">
+            <ComboBoxItem Content="ЮЛ"/>
+            <ComboBoxItem Content="ФЛ"/>
+        </ComboBox>
+
+        <Label Content="Имя клиента или название компании:"/>
+        <TextBox x:Name="CustomerNameTextBox" Margin="5" />
+
+        <Label Content="Выберите услуги:"/>
+        <!-- Добавьте элемент управления для выбора услуг -->
+
+        <Button Content="Создать заказ" Click="CreateOrderButton_Click" Margin="5"/>
+        <Button Content="Добавить клиента" Click="AddCustomerButton_Click" Margin="5"/>
+
+    </Grid>
+</Window>
